@@ -1,0 +1,22 @@
+git add * | git commit -m “Commit 1”
+(git commit -am “Commit 2”
+Verifica lo stato dei commit con git log --oneline
+git branch feature_1
+visualizza tutti i branch del progetto con git branch -v
+Spostati nel branche Feature_1 con git checkout Feature_1
+git merge feature_1
+git commit -am "Feature_1 merged in main"
+Visualizza lo storico delle modifiche con git log --oneline --graph
+Visualizza l’elenco dei commit con ‘git log --graph --color ‘
+Ora effettua un checkout del commit 3 ‘git checkout id_del_commit’
+Mostrare lo stato di tutti i branch e creare un alias
+Infine un “trucco”. Il comando git log ha diverse opzioni. Una delle combinazioni più utili
+interessante è la seguente (detta a dog)
+git log --all --decorate --oneline --graph
+la clausula --all visualizza lo stato di tutti i branch.
+Visto che è abbastanza lunga da scrivere, git permette la creazione di alias
+git config --global alias.adog "log --all --decorate --oneline
+--graph"
+Prova a cerare l’alias e testalo
+Unset
+git adog
